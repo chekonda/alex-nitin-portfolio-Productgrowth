@@ -31,9 +31,16 @@
   /* Secondary accent — used only for the smallest highlight moments */
   --color-sky-400: #5ec8e8;
 
+  /* Azure — Microsoft Azure brand blue, used for the Cloud skill category */
+  --color-azure-300: #7ec3f5;
+  --color-azure-400: #4fa8ec;
+  --color-azure-500: #0078d4;
+  --color-azure-600: #005ba1;
+
   --animate-fade-up: fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
   --animate-fade-in: fade-in 0.7s ease both;
   --animate-marquee: marquee 32s linear infinite;
+  --animate-float: float 5s ease-in-out infinite;
 
   @keyframes fade-up {
     from {
@@ -59,6 +66,15 @@
     }
     to {
       transform: translateX(-50%);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-6px);
     }
   }
 }

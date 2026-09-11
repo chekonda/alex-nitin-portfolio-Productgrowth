@@ -19,7 +19,7 @@ describe('App', () => {
 
   it('renders the hero, contact CTA and footer social links', () => {
     render(<App />)
-    expect(screen.getAllByRole('link', { name: /view my work/i }).length).toBeGreaterThan(0)
+    expect(screen.getAllByRole('link', { name: /download resume/i }).length).toBeGreaterThan(0)
     expect(screen.getAllByRole('link', { name: /email me/i }).length).toBeGreaterThan(0)
     expect(screen.getAllByRole('link', { name: /github/i }).length).toBeGreaterThan(0)
   })

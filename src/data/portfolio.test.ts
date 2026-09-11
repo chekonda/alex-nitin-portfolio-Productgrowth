@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest'
-import { education, experience, navLinks, profile, projects, skillCategories } from './portfolio'
+import {
+  certifications,
+  education,
+  experience,
+  navLinks,
+  profile,
+  skillCategories,
+} from './portfolio'
 
 describe('portfolio data integrity', () => {
   it('has non-empty required profile fields', () => {
@@ -7,6 +14,7 @@ describe('portfolio data integrity', () => {
     expect(profile.email).toContain('@')
     expect(profile.socials.github).toMatch(/^https:\/\/github\.com\//)
     expect(profile.socials.linkedin).toMatch(/^https:\/\/www\.linkedin\.com\//)
+    expect(profile.resumeFile).toMatch(/^\//)
   })
 
   it('gives every experience entry a role, company and at least one responsibility', () => {
@@ -14,16 +22,9 @@ describe('portfolio data integrity', () => {
     for (const role of experience) {
       expect(role.company).toBeTruthy()
       expect(role.role).toBeTruthy()
+      expect(role.location).toBeTruthy()
       expect(role.responsibilities.length).toBeGreaterThan(0)
       expect(role.skills.length).toBeGreaterThan(0)
-    }
-  })
-
-  it('gives every project a working live URL and at least one tag', () => {
-    expect(projects.length).toBeGreaterThan(0)
-    for (const project of projects) {
-      expect(project.liveUrl).toMatch(/^https:\/\//)
-      expect(project.tags.length).toBeGreaterThan(0)
     }
   })
 
@@ -37,6 +38,14 @@ describe('portfolio data integrity', () => {
   it('has education details filled in', () => {
     expect(education.institution).toBeTruthy()
     expect(education.degree).toBeTruthy()
+  })
+
+  it('has at least one certification with an issuer', () => {
+    expect(certifications.length).toBeGreaterThan(0)
+    for (const cert of certifications) {
+      expect(cert.name).toBeTruthy()
+      expect(cert.issuer).toBeTruthy()
+    }
   })
 
   it('every nav link points to a distinct in-page anchor', () => {

@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'motion/react'
-import { Menu, X } from 'lucide-react'
+import { Download, Menu, X } from 'lucide-react'
 import { navLinks, profile } from '@/data/portfolio'
 import { useActiveSection } from '@/hooks/useActiveSection'
 import { useScrolled } from '@/hooks/useScrolled'
@@ -74,13 +74,21 @@ export function Navbar() {
           </ul>
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2.5 lg:flex">
           <a
             href="#contact"
             onClick={handleNavigate('#contact')}
             className="whitespace-nowrap rounded-full border border-ink-600 bg-ink-900/60 px-4 py-2 text-sm font-medium text-ink-100 transition-all hover:-translate-y-0.5 hover:border-accent-400 hover:text-white"
           >
             Get in touch
+          </a>
+          <a
+            href={profile.resumeFile}
+            download
+            className="inline-flex items-center gap-1.5 whitespace-nowrap rounded-full bg-ink-50 px-4 py-2 text-sm font-medium text-ink-950 transition-all hover:-translate-y-0.5 hover:bg-white hover:shadow-lg hover:shadow-accent-glow"
+          >
+            <Download size={15} strokeWidth={2} />
+            Resume
           </a>
         </div>
 
@@ -122,6 +130,14 @@ export function Navbar() {
                 className="mt-2 rounded-lg border border-ink-600 px-3 py-3 text-center text-base font-medium text-ink-100"
               >
                 Get in touch
+              </a>
+              <a
+                href={profile.resumeFile}
+                download
+                className="inline-flex items-center justify-center gap-1.5 rounded-lg bg-ink-50 px-3 py-3 text-center text-base font-medium text-ink-950"
+              >
+                <Download size={16} strokeWidth={2} />
+                Download Resume
               </a>
             </Container>
           </motion.nav>

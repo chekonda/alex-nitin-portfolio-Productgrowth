@@ -1,43 +1,44 @@
-// All content below is transcribed from the source repository
-// (github.com/chekonda/New-Portfolio) and the previously deployed site
-// (alex-nitin-portfolio.vercel.app). Nothing here is invented — update
-// this file directly to change what appears on the site.
+// All content below is transcribed from Chekonda Alex Nitin's resume
+// (as of Sep 2026) and verified prior sources. Nothing here is invented —
+// update this file directly to change what appears on the site.
 
 export const profile = {
   name: 'Chekonda Alex Nitin',
   shortName: 'Alex Nitin',
   initials: 'CN',
-  title: 'Frontend Developer & Project Manager',
-  location: 'India',
+  title: 'Azure Cloud Engineer',
+  subtitle: 'Cloud Capacity & Incident Management',
+  location: 'Hyderabad, Telangana, India',
   email: 'chekondaalexnitin@gmail.com',
   phone: '+91 8328086697',
   phoneHref: 'tel:+918328086697',
-  availability: 'Currently available for work',
-  tagline:
-    'A results-oriented developer who enjoys turning raw ideas and data into responsive, well-built products.',
+  availability: 'Immediately available',
   intro:
-    "I'm a Web Developer with a background in Frontend Development, Web & Social Media Analytics, and Project Management. I care about the full path from planning to a shipped, working product — and I enjoy solving business problems along the way.",
+    "Azure Cloud Engineer with hands-on experience in Azure Compute capacity management and incident resolution for enterprise customers on Microsoft's Global Capacity Team at LTIMindtree — VM allocation troubleshooting, quota management, root cause analysis, and SLA-driven incident management across Resource Groups, VM Scale Sets, and Availability Zones.",
   about: [
-    'I build responsive, user-friendly web interfaces with JavaScript, React, and modern CSS, and round that out with web analytics tooling (Google Analytics, Hotjar, VWO) to understand how the things I build are actually used.',
-    "On the project side, I've managed work end-to-end — from planning and coordination through deployment — using tools like Jira and Trello to keep teams and timelines on track.",
+    "I work at the intersection of cloud infrastructure and digital operations. On Microsoft's Global Capacity Team at LTIMindtree, I troubleshoot Azure Compute allocation failures, manage quota requests (RDQs) and incident cases (ICMs), and run root cause analysis across Resource Groups, VM Scale Sets, and Availability Zones — all under SLA.",
+    "Before that, I ran website and app operations for Mamaearth (Honasa Consumer Ltd.), a high-traffic D2C ecommerce platform — working across Power BI, GA4, Firebase, AppsFlyer, and MoEngage to monitor performance and partnering with engineering, marketing, and design to ship improvements. That combination gives me a practical read on both infrastructure reliability and digital growth.",
   ],
   strengths: [
     {
-      title: 'Frontend Development',
-      description: 'Responsive, accessible interfaces built with HTML, CSS, JavaScript and React.',
-    },
-    {
-      title: 'Web & Product Analytics',
-      description: 'Instrumenting and reading user behavior with Google Analytics, Hotjar and VWO.',
-    },
-    {
-      title: 'Project Management',
-      description: 'Planning, coordinating and shipping work on time with Jira and Trello.',
-    },
-    {
-      title: 'Deployment & Ops',
+      title: 'Azure Cloud & Capacity Management',
       description:
-        'Shipping and hosting projects on Vercel and Netlify with GitHub-based workflows.',
+        'VM allocation troubleshooting, quota management, and capacity operations across Resource Groups, VM Scale Sets, and Availability Zones.',
+    },
+    {
+      title: 'Incident Management & RCA',
+      description:
+        'SLA-driven incident resolution (ICM/RDQ), severity classification, and root cause analysis using internal tooling and telemetry.',
+    },
+    {
+      title: 'Digital & Growth Analytics',
+      description:
+        'Monitoring performance and engagement with Power BI, GA4, Firebase, AppsFlyer, and MoEngage on a high-traffic D2C platform.',
+    },
+    {
+      title: 'Networking & Infrastructure',
+      description:
+        'Working knowledge of DNS, DHCP, TCP/IP, VMware virtualization concepts, Windows Server, and Office 365.',
     },
   ],
   socials: {
@@ -46,6 +47,10 @@ export const profile = {
     email: 'mailto:chekondaalexnitin@gmail.com',
     phone: 'tel:+918328086697',
   },
+  resumeFile: '/Chekonda-Alex-Nitin-Resume.pdf',
+  languages: ['English', 'Telugu', 'Hindi', 'Tamil'],
+  volunteer: 'Divya Disha NGO, Hyderabad',
+  interests: ['Traveling', 'Arts and Painting'],
 } as const
 
 export type ExperienceEntry = {
@@ -53,109 +58,131 @@ export type ExperienceEntry = {
   company: string
   role: string
   duration: string
+  location: string
   summary: string
   responsibilities: string[]
   skills: string[]
+  recognition?: string
 }
 
 export const experience: ExperienceEntry[] = [
   {
-    id: 'codeclause',
-    company: 'CodeClause',
-    role: 'Fullstack Developer Internship',
-    duration: 'Oct 2023 – Nov 2023',
+    id: 'ltimindtree',
+    company: 'LTIMindtree — Microsoft Azure Project (Global Capacity Team)',
+    role: 'Azure Cloud Engineer',
+    duration: 'Feb 2025 – Jul 2026',
+    location: 'Hyderabad, India',
     summary:
-      'Worked across the stack to improve user interaction, scalability and performance on an internship project delivered on schedule.',
+      "Supported Azure Compute capacity operations for Premium (S500) enterprise customers on Microsoft's Global Capacity Team, handling quota requests, allocation-failure troubleshooting, and incident resolution within defined SLAs across rotational shifts.",
     responsibilities: [
-      'Implemented features to improve user interaction, scalability and system performance, working across both front-end and back-end technologies.',
-      'Delivered the project within the specified timeframe while maintaining high-quality outcomes.',
-      "Contributed to CodeClause's software development practices through problem-solving and iterative improvements.",
+      'Created and managed RDQs (quota requests) and ICMs (incident cases), applying correct severity classification based on issue type and business impact.',
+      'Troubleshot VM deployment and scale-up failures caused by out-of-capacity conditions, Offer/Region/SKU/Zone restrictions, and Availability Set or Proximity Placement Group (PPG) pinning constraints.',
+      'Performed root cause analysis using internal tooling (Jarvis) to review subscription quota, offer restrictions, and logical-to-physical zone mapping, and by analyzing VMApiQosEvents and Compute Allocation Activity logs.',
+      'Worked across Resource Groups, VM Scale Sets, Availability Sets, and Availability Zones to resolve cluster capacity constraints, and supported cluster management operations including ECR, Defrag, and OFR.',
     ],
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'GitHub', 'Vercel', 'Netlify'],
+    skills: ['Azure Compute', 'VM Scale Sets', 'Availability Zones', 'Incident Management', 'Root Cause Analysis', 'SLA Management'],
+    recognition: 'iWin Spot Award, Super Crew (LTIMindtree, Jan 2026) — for consistently going above and beyond in incident and capacity operations.',
   },
   {
-    id: 'codsoft',
-    company: 'Codsoft',
-    role: 'Frontend Developer Internship',
-    duration: 'Aug 2023 – Sep 2023',
+    id: 'mamaearth',
+    company: 'Mamaearth (Honasa Consumer Ltd.)',
+    role: 'Website & App Operations Intern',
+    duration: 'Aug 2024 – Jan 2025',
+    location: 'Hyderabad, India',
     summary:
-      'Led development of responsive web applications, staying current with front-end practices and collaborating using React.',
+      "Independently contributed to the development and optimization of the company's homepage and mobile app experience on a high-traffic D2C ecommerce platform, improving usability, engagement, and site performance.",
     responsibilities: [
-      'Led development of responsive web applications using HTML, CSS and JavaScript.',
-      'Stayed current with industry trends, contributing to innovation and continuous improvement in front-end practices.',
-      'Collaborated to integrate front-end technologies, leveraging frameworks like React.js.',
+      'Managed day-to-day website and app operations to enhance user experience, engagement, and conversion.',
+      'Leveraged analytics and CRM platforms — Power BI, Google Analytics (GA4), Firebase, AppsFlyer, and MoEngage — to monitor performance and generate actionable insights.',
+      'Worked across Magento, Shopify, and Strapi to support content and ecommerce operations.',
+      'Partnered with cross-functional teams (engineering, marketing, and design) to support project execution and drive operational improvements.',
     ],
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'GitHub', 'Vercel', 'Netlify'],
-  },
-]
-
-export type Project = {
-  id: string
-  name: string
-  description: string
-  tags: string[]
-  liveUrl: string
-  image: string
-}
-
-export const projects: Project[] = [
-  {
-    id: 'my-clock',
-    name: 'My Clock',
-    description: 'A live, in-browser clock application built and deployed as a standalone web app.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://clockieapp.netlify.app',
-    image: 'clock',
-  },
-  {
-    id: 'to-do-list',
-    name: 'To Do List',
-    description: 'A task-management web app for creating, tracking and completing everyday to-dos.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://todo-bynitin.netlify.app',
-    image: 'todo',
-  },
-  {
-    id: 'weather-app',
-    name: 'Weather Application',
-    description: 'A weather-lookup web app that surfaces current conditions in a clean interface.',
-    tags: ['HTML', 'CSS', 'JavaScript'],
-    liveUrl: 'https://nitinsweatherapp.netlify.app',
-    image: 'weather',
+    skills: ['Power BI', 'Google Analytics (GA4)', 'Firebase', 'AppsFlyer', 'MoEngage', 'Magento', 'Shopify', 'Strapi'],
   },
 ]
 
 export type SkillCategory = {
   title: string
+  accent: 'azure' | 'amber' | 'fuchsia' | 'teal' | 'emerald'
   skills: string[]
 }
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'Programming & Frontend',
-    skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Bootstrap', 'C++', 'SQL', 'DBMS'],
+    title: 'Azure Cloud & Capacity Management',
+    accent: 'azure',
+    skills: [
+      'Microsoft Azure',
+      'Azure Compute',
+      'Azure Portal',
+      'VM Scale Sets',
+      'Availability Sets',
+      'Availability Zones',
+      'Resource Groups',
+      'Proximity Placement Groups',
+      'Quota Management',
+      'Capacity Management',
+      'Allocation Troubleshooting',
+    ],
   },
   {
-    title: 'Web & Product Analytics',
-    skills: ['Google Analytics', 'Hotjar', 'VWO'],
+    title: 'Incident & Operations',
+    accent: 'amber',
+    skills: [
+      'Incident Management (ICM)',
+      'RDQ Management',
+      'Root Cause Analysis',
+      'SLA Management',
+      'ITSM & Ticketing Workflows',
+      'Cluster Operations (ECR, Defrag, OFR)',
+    ],
   },
   {
-    title: 'Tools & Platforms',
-    skills: ['GitHub', 'Linux', 'Notion', 'Weebly', 'Excel', 'MS Office'],
+    title: 'Analytics & Digital Operations',
+    accent: 'fuchsia',
+    skills: ['Power BI', 'Google Analytics (GA4)', 'Firebase', 'AppsFlyer', 'MoEngage', 'CRM Operations', 'Magento', 'Shopify', 'Strapi'],
+  },
+  {
+    title: 'Networking & Infrastructure',
+    accent: 'teal',
+    skills: ['DNS', 'DHCP', 'TCP/IP', 'VMware Virtualization', 'Windows Server', 'Office 365'],
+  },
+  {
+    title: 'Programming & Web',
+    accent: 'emerald',
+    skills: ['HTML', 'CSS', 'C++'],
   },
 ]
 
 export const education = {
   institution: 'Lovely Professional University',
   degree: 'Bachelor of Technology',
-  field: 'Computer Science Engineering — Specialization in Web Development',
-  duration: 'April 2020 – May 2024',
+  field: 'Computer Science and Engineering',
+  detail: 'CGPA: 7.78',
 }
+
+export type Certification = {
+  name: string
+  issuer: string
+}
+
+export const certifications: Certification[] = [
+  { name: 'Azure Fundamentals', issuer: 'Microsoft' },
+  { name: 'Introduction to Front End Development', issuer: 'Meta' },
+  { name: 'Innovating with Google Cloud AI', issuer: 'Simplilearn' },
+]
+
+export const additionalTraining = [
+  'Networking Fundamentals',
+  'Active Directory',
+  'Group Policy',
+  'VMware Concepts',
+  'ITIL Fundamentals',
+]
 
 export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Experience', href: '#experience' },
-  { label: 'Projects', href: '#projects' },
   { label: 'Skills', href: '#skills' },
   { label: 'Education', href: '#education' },
   { label: 'Contact', href: '#contact' },

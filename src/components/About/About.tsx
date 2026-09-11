@@ -1,3 +1,4 @@
+import { motion } from 'motion/react'
 import { profile } from '@/data/portfolio'
 import { Container } from '@/components/UI/Container'
 import { SectionHeading } from '@/components/UI/SectionHeading'
@@ -17,17 +18,27 @@ export function About() {
                 </Reveal>
               ))}
             </div>
+
+            <Reveal delay={0.2} className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-xs text-ink-500">
+              <span>{profile.languages.join(' · ')}</span>
+              <span className="hidden sm:inline">•</span>
+              <span>Volunteers with {profile.volunteer}</span>
+            </Reveal>
           </div>
 
           <ul className="grid gap-4 sm:grid-cols-2">
             {profile.strengths.map((strength, i) => (
               <Reveal as="li" key={strength.title} delay={i * 0.06}>
-                <div className="group h-full rounded-2xl border border-ink-800 bg-ink-900/40 p-5 transition-colors duration-300 hover:border-ink-600 hover:bg-ink-900/70">
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 22 }}
+                  className="group h-full rounded-2xl border border-ink-800 bg-ink-900/40 p-5 transition-colors duration-300 hover:border-accent-500/40 hover:bg-ink-900/70"
+                >
                   <p className="text-sm font-semibold text-ink-50">{strength.title}</p>
                   <p className="mt-2 text-sm leading-relaxed text-ink-400">
                     {strength.description}
                   </p>
-                </div>
+                </motion.div>
               </Reveal>
             ))}
           </ul>

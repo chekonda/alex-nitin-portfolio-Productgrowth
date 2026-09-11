@@ -1,4 +1,5 @@
-import { ArrowRight, Mail, Phone } from 'lucide-react'
+import { motion } from 'motion/react'
+import { ArrowRight, Download, Mail, Phone } from 'lucide-react'
 import { profile } from '@/data/portfolio'
 import { Container } from '@/components/UI/Container'
 import { Reveal } from '@/components/UI/Reveal'
@@ -21,8 +22,9 @@ export function Contact() {
             Let&apos;s build something worth shipping.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-balance text-base leading-relaxed text-ink-300">
-            {profile.availability}. If you&apos;re hiring for frontend, web operations or
-            project-management-adjacent roles, I&apos;d like to hear from you.
+            {profile.availability}. If you&apos;re hiring for Cloud Engineering, Azure
+            infrastructure, or digital growth &amp; analytics roles, I&apos;d like to hear from
+            you.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
@@ -37,6 +39,10 @@ export function Contact() {
               rel="noreferrer"
             >
               Connect on LinkedIn
+            </Button>
+            <Button href={profile.resumeFile} variant="secondary" download>
+              Resume
+              <Download size={15} />
             </Button>
           </div>
 
@@ -82,14 +88,16 @@ function ContactRow({
   external?: boolean
 }) {
   return (
-    <a
+    <motion.a
       href={href}
       target={external ? '_blank' : undefined}
       rel={external ? 'noreferrer' : undefined}
+      whileHover={{ y: -2 }}
+      transition={{ type: 'spring', stiffness: 400, damping: 18 }}
       className="flex items-center gap-2 transition-colors hover:text-white"
     >
       <span className="text-ink-400">{icon}</span>
       {label}
-    </a>
+    </motion.a>
   )
 }
