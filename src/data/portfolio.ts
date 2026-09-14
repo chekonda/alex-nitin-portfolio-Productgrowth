@@ -71,7 +71,7 @@ export const experience: ExperienceEntry[] = [
     company: 'Mamaearth (Honasa Consumer Ltd.) — Product Growth Team',
     role: 'Website & App Operations Intern',
     duration: 'Aug 2024 – Jan 2025',
-    location: 'Hyderabad, India',
+    location: 'Gurugram, India',
     summary:
       "Drove product growth for Mamaearth's D2C platform — shipping website & app improvements and optimizing site/app performance and conversion.",
     responsibilities: [
@@ -97,7 +97,7 @@ export const experience: ExperienceEntry[] = [
     id: 'ltimindtree',
     company: 'LTIMindtree — Microsoft Azure Project (Global Capacity Team)',
     role: 'Cloud Engineer',
-    duration: 'Feb 2025 – Present',
+    duration: 'Feb 2025 – Jul 2026',
     location: 'Hyderabad, India',
     summary:
       "Support Azure enterprise infrastructure for premium customers — quota management, incident resolution, and troubleshooting within SLA.",
