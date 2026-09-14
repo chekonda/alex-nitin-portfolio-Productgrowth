@@ -13,7 +13,7 @@ export function Experience() {
         <SectionHeading
           eyebrow="Experience"
           title="Where I've worked"
-          description="Cloud capacity & incident management, backed by a prior run in digital operations and analytics."
+          description="Product growth, digital marketing & D2C e-commerce experience, backed by a structured, analytical foundation in cloud engineering."
         />
 
         <ol className="relative mt-14 space-y-10 border-l border-ink-800 pl-8 sm:pl-10">

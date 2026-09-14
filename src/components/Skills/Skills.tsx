@@ -1,5 +1,5 @@
 import { motion } from 'motion/react'
-import { AlertTriangle, Cloud, Code2, Network, TrendingUp } from 'lucide-react'
+import { BarChart3, Cloud, Megaphone, ShoppingBag, TrendingUp } from 'lucide-react'
 import { skillCategories, type SkillCategory } from '@/data/portfolio'
 import { skillIconMap } from '@/lib/skillIcons'
 import { Container } from '@/components/UI/Container'
@@ -7,11 +7,11 @@ import { SectionHeading } from '@/components/UI/SectionHeading'
 import { Reveal } from '@/components/UI/Reveal'
 
 const categoryIcon: Record<SkillCategory['accent'], typeof Cloud> = {
-  azure: Cloud,
-  amber: AlertTriangle,
   fuchsia: TrendingUp,
-  teal: Network,
-  emerald: Code2,
+  amber: Megaphone,
+  teal: BarChart3,
+  emerald: ShoppingBag,
+  azure: Cloud,
 }
 
 // Full literal Tailwind class strings per accent — written out (not built
@@ -103,7 +103,7 @@ export function Skills() {
         <SectionHeading
           eyebrow="Skills"
           title="What I work with"
-          description="Grouped by how I actually use them — cloud operations first, digital growth close behind."
+          description="Grouped by how I actually use them — product growth and digital marketing first, cloud engineering close behind."
         />
 
         <div className="mt-14 grid gap-6 lg:grid-cols-2">

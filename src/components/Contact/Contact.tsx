@@ -22,9 +22,9 @@ export function Contact() {
             Let&apos;s build something worth shipping.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-balance text-base leading-relaxed text-ink-300">
-            {profile.availability}. If you&apos;re hiring for Cloud Engineering, Azure
-            infrastructure, or digital growth &amp; analytics roles, I&apos;d like to hear from
-            you.
+            {profile.availability}. If you&apos;re hiring for Product Growth, Digital Marketing,
+            D2C E-Commerce, or Website &amp; App Operations roles — or Cloud Engineering — I&apos;d
+            like to hear from you.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">

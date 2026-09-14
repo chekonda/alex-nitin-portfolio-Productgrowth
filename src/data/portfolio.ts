@@ -6,39 +6,39 @@ export const profile = {
   name: 'Chekonda Alex Nitin',
   shortName: 'Alex Nitin',
   initials: 'CN',
-  title: 'Azure Cloud Engineer',
-  subtitle: 'Cloud Capacity & Incident Management',
+  title: 'Product Growth & Digital Marketing',
+  subtitle: 'D2C E-Commerce · Website & App Operations',
   location: 'Hyderabad, Telangana, India',
   email: 'chekondaalexnitin@gmail.com',
   phone: '+91 8328086697',
   phoneHref: 'tel:+918328086697',
   availability: 'Immediately available',
   intro:
-    "Azure Cloud Engineer with hands-on experience in Azure Compute capacity management and incident resolution for enterprise customers on Microsoft's Global Capacity Team at LTIMindtree — VM allocation troubleshooting, quota management, root cause analysis, and SLA-driven incident management across Resource Groups, VM Scale Sets, and Availability Zones.",
+    "Product-minded professional with hands-on experience in website & app operations, digital marketing, and D2C e-commerce — gained on the Product Growth team at Mamaearth (Honasa Consumer), a leading D2C beauty and personal care brand. I use data from GA4, Firebase, Power BI, AppsFlyer, and MoEngage to inform product and marketing decisions, working across CRM, lifecycle marketing, and e-commerce platforms like Magento, Shopify, and Strapi. A current role as a Cloud Engineer at LTIMindtree adds a structured, analytical foundation to that growth work.",
   about: [
-    "I work at the intersection of cloud infrastructure and digital operations. On Microsoft's Global Capacity Team at LTIMindtree, I troubleshoot Azure Compute allocation failures, manage quota requests (RDQs) and incident cases (ICMs), and run root cause analysis across Resource Groups, VM Scale Sets, and Availability Zones — all under SLA.",
-    "Before that, I ran website and app operations for Mamaearth (Honasa Consumer Ltd.), a high-traffic D2C ecommerce platform — working across Power BI, GA4, Firebase, AppsFlyer, and MoEngage to monitor performance and partnering with engineering, marketing, and design to ship improvements. That combination gives me a practical read on both infrastructure reliability and digital growth.",
+    "I'm most at home translating growth goals into shipped work — on the Product Growth team at Mamaearth (Honasa Consumer Ltd.), a high-traffic D2C beauty and personal care platform, I owned improvements to the homepage and mobile app experience, tracked traffic/engagement/conversion in Power BI, GA4, and Firebase, and supported CRM and lifecycle marketing campaigns through MoEngage and AppsFlyer. Day to day that meant working closely with product, design, marketing, and engineering to turn business goals into operational execution across Magento, Shopify, and Strapi.",
+    "Alongside that, I'm a Cloud Engineer on a Microsoft Azure project at LTIMindtree, supporting enterprise infrastructure, incident management, and cross-functional troubleshooting. It's a different kind of work, but it feeds the same instinct — a structured, analytical approach to solving product and growth problems, not just technical ones.",
   ],
   strengths: [
     {
-      title: 'Azure Cloud & Capacity Management',
+      title: 'Product Growth & D2C E-Commerce',
       description:
-        'VM allocation troubleshooting, quota management, and capacity operations across Resource Groups, VM Scale Sets, and Availability Zones.',
+        'Website & app feature rollouts, usability improvements, and funnel & conversion optimization for a high-traffic D2C e-commerce platform.',
     },
     {
-      title: 'Incident Management & RCA',
+      title: 'Digital Marketing & CRM',
       description:
-        'SLA-driven incident resolution (ICM/RDQ), severity classification, and root cause analysis using internal tooling and telemetry.',
+        'Lifecycle marketing and customer engagement/retention campaigns via MoEngage and AppsFlyer, across app and web.',
     },
     {
-      title: 'Digital & Growth Analytics',
+      title: 'Analytics & Data-Driven Decisions',
       description:
-        'Monitoring performance and engagement with Power BI, GA4, Firebase, AppsFlyer, and MoEngage on a high-traffic D2C platform.',
+        'Tracking traffic, engagement, and conversion in Power BI, GA4, and Firebase to turn data into actionable product decisions.',
     },
     {
-      title: 'Networking & Infrastructure',
+      title: 'Cloud & Technical Grounding',
       description:
-        'Working knowledge of DNS, DHCP, TCP/IP, VMware virtualization concepts, Windows Server, and Office 365.',
+        'Microsoft Azure infrastructure, incident management, and networking — a structured, analytical foundation from a current Cloud Engineer role.',
     },
   ],
   socials: {
@@ -49,7 +49,7 @@ export const profile = {
   },
   resumeFile: '/Chekonda-Alex-Nitin-Resume.pdf',
   languages: ['English', 'Telugu', 'Hindi', 'Tamil'],
-  volunteer: 'Divya Disha NGO, Hyderabad',
+  volunteer: 'Technical Intern, Divya Disha NGO, Hyderabad',
   interests: ['Traveling', 'Arts and Painting'],
 } as const
 
@@ -67,37 +67,56 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    id: 'ltimindtree',
-    company: 'LTIMindtree — Microsoft Azure Project (Global Capacity Team)',
-    role: 'Azure Cloud Engineer',
-    duration: 'Feb 2025 – Jul 2026',
+    id: 'mamaearth',
+    company: 'Mamaearth (Honasa Consumer Ltd.) — Product Growth Team',
+    role: 'Website & App Operations Intern',
+    duration: 'Aug 2024 – Jan 2025',
     location: 'Hyderabad, India',
     summary:
-      "Supported Azure Compute capacity operations for Premium (S500) enterprise customers on Microsoft's Global Capacity Team, handling quota requests, allocation-failure troubleshooting, and incident resolution within defined SLAs across rotational shifts.",
+      "Contributed to product growth initiatives for Mamaearth's D2C e-commerce platform — a leading D2C beauty and personal care brand — supporting website and app feature rollouts, usability improvements, and site/app performance optimization.",
+    responsibilities: [
+      "Independently owned improvements to the company's homepage and mobile app experience, working closely with product, design, and engineering to ship changes that enhanced user experience and conversion.",
+      'Tracked and analyzed product and growth metrics (traffic, engagement, conversion) using Power BI, Google Analytics (GA4), and Firebase to generate actionable insights for stakeholders.',
+      'Supported CRM and lifecycle marketing initiatives via MoEngage and AppsFlyer to improve customer engagement, retention, and campaign performance across the app and website.',
+      'Worked across Magento, Shopify, and Strapi to manage content, catalog, and e-commerce operations for a high-traffic D2C brand.',
+      'Partnered daily with cross-functional teams — product, growth, marketing, and engineering — to translate business goals into operational execution and drive continuous improvement.',
+    ],
+    skills: [
+      'Product Growth',
+      'Power BI',
+      'Google Analytics (GA4)',
+      'Firebase',
+      'MoEngage',
+      'AppsFlyer',
+      'Magento',
+      'Shopify',
+      'Strapi',
+    ],
+  },
+  {
+    id: 'ltimindtree',
+    company: 'LTIMindtree — Microsoft Azure Project (Global Capacity Team)',
+    role: 'Cloud Engineer',
+    duration: 'Feb 2025 – Present',
+    location: 'Hyderabad, India',
+    summary:
+      "Support Microsoft Azure enterprise infrastructure and cloud operations for Premium (S500) enterprise customers on Microsoft's Global Capacity Team — quota requests, allocation-failure troubleshooting, and incident resolution within defined SLAs — experience that brings a structured, analytical approach to product and growth work.",
     responsibilities: [
       'Created and managed RDQs (quota requests) and ICMs (incident cases), applying correct severity classification based on issue type and business impact.',
       'Troubleshot VM deployment and scale-up failures caused by out-of-capacity conditions, Offer/Region/SKU/Zone restrictions, and Availability Set or Proximity Placement Group (PPG) pinning constraints.',
       'Performed root cause analysis using internal tooling (Jarvis) to review subscription quota, offer restrictions, and logical-to-physical zone mapping, and by analyzing VMApiQosEvents and Compute Allocation Activity logs.',
       'Worked across Resource Groups, VM Scale Sets, Availability Sets, and Availability Zones to resolve cluster capacity constraints, and supported cluster management operations including ECR, Defrag, and OFR.',
     ],
-    skills: ['Azure Compute', 'VM Scale Sets', 'Availability Zones', 'Incident Management', 'Root Cause Analysis', 'SLA Management'],
-    recognition: 'iWin Spot Award, Super Crew (LTIMindtree, Jan 2026) — for consistently going above and beyond in incident and capacity operations.',
-  },
-  {
-    id: 'mamaearth',
-    company: 'Mamaearth (Honasa Consumer Ltd.)',
-    role: 'Website & App Operations Intern',
-    duration: 'Aug 2024 – Jan 2025',
-    location: 'Hyderabad, India',
-    summary:
-      "Independently contributed to the development and optimization of the company's homepage and mobile app experience on a high-traffic D2C ecommerce platform, improving usability, engagement, and site performance.",
-    responsibilities: [
-      'Managed day-to-day website and app operations to enhance user experience, engagement, and conversion.',
-      'Leveraged analytics and CRM platforms — Power BI, Google Analytics (GA4), Firebase, AppsFlyer, and MoEngage — to monitor performance and generate actionable insights.',
-      'Worked across Magento, Shopify, and Strapi to support content and ecommerce operations.',
-      'Partnered with cross-functional teams (engineering, marketing, and design) to support project execution and drive operational improvements.',
+    skills: [
+      'Microsoft Azure',
+      'VM Scale Sets',
+      'Availability Zones',
+      'Incident Management',
+      'Root Cause Analysis',
+      'VMware',
     ],
-    skills: ['Power BI', 'Google Analytics (GA4)', 'Firebase', 'AppsFlyer', 'MoEngage', 'Magento', 'Shopify', 'Strapi'],
+    recognition:
+      'iWin Spot Award, Super Crew (LTIMindtree, Jan 2026) — for consistently going above and beyond in incident and capacity operations.',
   },
 ]
 
@@ -109,48 +128,53 @@ export type SkillCategory = {
 
 export const skillCategories: SkillCategory[] = [
   {
-    title: 'Azure Cloud & Capacity Management',
+    title: 'Product & Growth',
+    accent: 'fuchsia',
+    skills: [
+      'Product Growth',
+      'D2C E-Commerce',
+      'Website & App Operations',
+      'Funnel & Conversion Optimization',
+      'User Experience',
+      'Cross-Functional Collaboration',
+    ],
+  },
+  {
+    title: 'Digital Marketing & CRM',
+    accent: 'amber',
+    skills: [
+      'CRM Operations',
+      'Lifecycle Marketing',
+      'MoEngage',
+      'AppsFlyer',
+      'Digital Marketing',
+      'Customer Engagement & Retention',
+    ],
+  },
+  {
+    title: 'Analytics & Insights',
+    accent: 'teal',
+    skills: ['Power BI', 'Google Analytics (GA4)', 'Firebase', 'Data-Driven Decision Making'],
+  },
+  {
+    title: 'E-Commerce & Web Platforms',
+    accent: 'emerald',
+    skills: ['Magento', 'Shopify', 'Strapi', 'HTML', 'CSS'],
+  },
+  {
+    title: 'Cloud & Technical',
     accent: 'azure',
     skills: [
       'Microsoft Azure',
-      'Azure Compute',
-      'Azure Portal',
+      'Cloud Infrastructure',
       'VM Scale Sets',
-      'Availability Sets',
       'Availability Zones',
-      'Resource Groups',
-      'Proximity Placement Groups',
-      'Quota Management',
-      'Capacity Management',
-      'Allocation Troubleshooting',
-    ],
-  },
-  {
-    title: 'Incident & Operations',
-    accent: 'amber',
-    skills: [
-      'Incident Management (ICM)',
-      'RDQ Management',
+      'Incident Management',
       'Root Cause Analysis',
-      'SLA Management',
-      'ITSM & Ticketing Workflows',
-      'Cluster Operations (ECR, Defrag, OFR)',
+      'VMware',
+      'Networking',
+      'C++',
     ],
-  },
-  {
-    title: 'Analytics & Digital Operations',
-    accent: 'fuchsia',
-    skills: ['Power BI', 'Google Analytics (GA4)', 'Firebase', 'AppsFlyer', 'MoEngage', 'CRM Operations', 'Magento', 'Shopify', 'Strapi'],
-  },
-  {
-    title: 'Networking & Infrastructure',
-    accent: 'teal',
-    skills: ['DNS', 'DHCP', 'TCP/IP', 'VMware Virtualization', 'Windows Server', 'Office 365'],
-  },
-  {
-    title: 'Programming & Web',
-    accent: 'emerald',
-    skills: ['HTML', 'CSS', 'C++'],
   },
 ]
 
