@@ -73,13 +73,13 @@ export const experience: ExperienceEntry[] = [
     duration: 'Aug 2024 – Jan 2025',
     location: 'Hyderabad, India',
     summary:
-      "Contributed to product growth initiatives for Mamaearth's D2C e-commerce platform — a leading D2C beauty and personal care brand — supporting website and app feature rollouts, usability improvements, and site/app performance optimization.",
+      "Drove product growth for Mamaearth's D2C platform — shipping website & app improvements and optimizing site/app performance and conversion.",
     responsibilities: [
-      "Independently owned improvements to the company's homepage and mobile app experience, working closely with product, design, and engineering to ship changes that enhanced user experience and conversion.",
-      'Tracked and analyzed product and growth metrics (traffic, engagement, conversion) using Power BI, Google Analytics (GA4), and Firebase to generate actionable insights for stakeholders.',
-      'Supported CRM and lifecycle marketing initiatives via MoEngage and AppsFlyer to improve customer engagement, retention, and campaign performance across the app and website.',
-      'Worked across Magento, Shopify, and Strapi to manage content, catalog, and e-commerce operations for a high-traffic D2C brand.',
-      'Partnered daily with cross-functional teams — product, growth, marketing, and engineering — to translate business goals into operational execution and drive continuous improvement.',
+      'Owned homepage & mobile app improvements, partnering with product, design, and engineering to boost UX and conversion.',
+      'Tracked traffic, engagement & conversion in Power BI, GA4, and Firebase to surface actionable insights.',
+      'Drove CRM & lifecycle marketing via MoEngage and AppsFlyer to boost engagement and retention.',
+      'Managed content, catalog & e-commerce ops across Magento, Shopify, and Strapi.',
+      'Partnered daily across product, growth, marketing, and engineering to execute on business goals.',
     ],
     skills: [
       'Product Growth',
@@ -100,12 +100,12 @@ export const experience: ExperienceEntry[] = [
     duration: 'Feb 2025 – Present',
     location: 'Hyderabad, India',
     summary:
-      "Support Microsoft Azure enterprise infrastructure and cloud operations for Premium (S500) enterprise customers on Microsoft's Global Capacity Team — quota requests, allocation-failure troubleshooting, and incident resolution within defined SLAs — experience that brings a structured, analytical approach to product and growth work.",
+      "Support Azure enterprise infrastructure for premium customers — quota management, incident resolution, and troubleshooting within SLA.",
     responsibilities: [
-      'Created and managed RDQs (quota requests) and ICMs (incident cases), applying correct severity classification based on issue type and business impact.',
-      'Troubleshot VM deployment and scale-up failures caused by out-of-capacity conditions, Offer/Region/SKU/Zone restrictions, and Availability Set or Proximity Placement Group (PPG) pinning constraints.',
-      'Performed root cause analysis using internal tooling (Jarvis) to review subscription quota, offer restrictions, and logical-to-physical zone mapping, and by analyzing VMApiQosEvents and Compute Allocation Activity logs.',
-      'Worked across Resource Groups, VM Scale Sets, Availability Sets, and Availability Zones to resolve cluster capacity constraints, and supported cluster management operations including ECR, Defrag, and OFR.',
+      'Manage RDQs & ICMs — quota requests and incident cases — with correct severity classification.',
+      'Run root cause analysis via internal tooling (Jarvis) across quota, offer, and zone data.',
+      'Troubleshoot VM deployment & scale-up failures from capacity, zone, and PPG constraints.',
+      'Resolve cluster capacity issues across Resource Groups, Scale Sets & Availability Zones; support ECR/Defrag/OFR ops.',
     ],
     skills: [
       'Microsoft Azure',
