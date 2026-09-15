@@ -14,10 +14,10 @@ export const profile = {
   phoneHref: 'tel:+918328086697',
   availability: 'Immediately available',
   intro:
-    "Product-minded professional with hands-on experience in website & app operations, digital marketing, and D2C e-commerce — gained on the Product Growth team at Mamaearth (Honasa Consumer), a leading D2C beauty and personal care brand. I use data from GA4, Firebase, Power BI, AppsFlyer, and MoEngage to inform product and marketing decisions, working across CRM, lifecycle marketing, and e-commerce platforms like Magento, Shopify, and Strapi. A current role as a Cloud Engineer at LTIMindtree adds a structured, analytical foundation to that growth work.",
+    "Product-minded professional with hands-on experience in website & app operations, digital marketing, and D2C e-commerce — gained on the Product Growth team at Mamaearth (Honasa Consumer), a leading D2C beauty and personal care brand. I use data from GA4, Firebase, Power BI, AppsFlyer, and MoEngage to inform product and marketing decisions, working across CRM, lifecycle marketing, and e-commerce platforms like Magento, Shopify, and Strapi. I also bring a structured, analytical foundation from a prior role as a Cloud Engineer at LTIMindtree.",
   about: [
     "I'm most at home translating growth goals into shipped work — on the Product Growth team at Mamaearth (Honasa Consumer Ltd.), a high-traffic D2C beauty and personal care platform, I owned improvements to the homepage and mobile app experience, tracked traffic/engagement/conversion in Power BI, GA4, and Firebase, and supported CRM and lifecycle marketing campaigns through MoEngage and AppsFlyer. Day to day that meant working closely with product, design, marketing, and engineering to turn business goals into operational execution across Magento, Shopify, and Strapi.",
-    "Alongside that, I'm a Cloud Engineer on a Microsoft Azure project at LTIMindtree, supporting enterprise infrastructure, incident management, and cross-functional troubleshooting. It's a different kind of work, but it feeds the same instinct — a structured, analytical approach to solving product and growth problems, not just technical ones.",
+    "Before that, I was a Cloud Engineer on a Microsoft Azure project at LTIMindtree, supporting enterprise infrastructure, incident management, and cross-functional troubleshooting. It was a different kind of work, but it fed the same instinct — a structured, analytical approach to solving product and growth problems, not just technical ones.", 
   ],
   strengths: [
     {
@@ -38,7 +38,7 @@ export const profile = {
     {
       title: 'Cloud & Technical Grounding',
       description:
-        'Microsoft Azure infrastructure, incident management, and networking — a structured, analytical foundation from a current Cloud Engineer role.',
+        'Microsoft Azure infrastructure, incident management, and networking — a structured, analytical foundation from a prior Cloud Engineer role.',
     },
   ],
   socials: {
@@ -99,13 +99,14 @@ export const experience: ExperienceEntry[] = [
     role: 'Cloud Engineer',
     duration: 'Feb 2025 – Jul 2026',
     location: 'Hyderabad, India',
-    summary:
-      "Support Azure enterprise infrastructure for premium customers — quota management, incident resolution, and troubleshooting within SLA.",
-    responsibilities: [
-      'Manage RDQs & ICMs — quota requests and incident cases — with correct severity classification.',
-      'Run root cause analysis via internal tooling (Jarvis) across quota, offer, and zone data.',
-      'Troubleshoot VM deployment & scale-up failures from capacity, zone, and PPG constraints.',
-      'Resolve cluster capacity issues across Resource Groups, Scale Sets & Availability Zones; support ECR/Defrag/OFR ops.',
+    summary: 
+      "Supported Azure enterprise infrastructure for premium customers — quota management, incident resolution, and troubleshooting within SLA.",
+    responsibilities: 
+    [
+      'Managed RDQs & ICMs — quota requests and incident cases — with correct severity classification.',
+      'Ran root cause analysis via internal tooling (Jarvis) across quota, offer, and zone data.',
+      'Diagnosed VM deployment & scale-up failures from capacity, zone, and PPG constraints.',
+      'Resolved cluster capacity issues across Resource Groups, Scale Sets & Availability Zones; supported ECR/Defrag/OFR ops.',
     ],
     skills: [
       'Microsoft Azure',
